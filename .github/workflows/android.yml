@@ -3,7 +3,7 @@ name: Android CI
 on:
  push:
   branches:
-   - dot11
+   - dot11-test
 
 jobs:
   build:
@@ -22,3 +22,8 @@ jobs:
       run: ./gradlew build
     - name: Build Release APK
       run: ./gradlew assembleRelease
+    - name: Upload a build Artifact
+      uses: actions/upload-artifact@v2.2.4
+      with:
+        name: app-release.apk
+        path: app/build/outputs/apk/release/app-release.apk
