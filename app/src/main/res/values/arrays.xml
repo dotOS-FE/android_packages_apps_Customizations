@@ -47,9 +47,9 @@
     <bool name="config_batterymeterDualTone">false</bool>
 
     <string-array name="dot_walls">
-        <item>dot_wall_0</item>
-        <item>dot_wall_1</item>
-        <item>dot_wall_2</item>
+        <item>dotfe_wall_0</item>
+        <item>dotfe_wall_1</item>
+        <item>dotfe_wall_2</item>
     </string-array>
 
     <!-- Hardware key rebinding -->

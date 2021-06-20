@@ -31,5 +31,5 @@
     allow for changing them -->
     <string name="grid_control_metadata_name" translatable="false">com.android.launcher3.grid.control</string>
 
-    <string name="dot_wallpapers_packagename" translatable="false">com.dot.extra.wallpapers</string>
+    <string name="dot_wallpapers_packagename" translatable="false">com.dotfe.extra.wallpapers</string>
 </resources>
