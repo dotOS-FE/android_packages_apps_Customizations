@@ -394,6 +394,11 @@ class FeatureManager(private val contentResolver: ContentResolver) {
          */
         val AMBIENT_NOTIFICATION_LIGHT_MODE = "ambient_notification_light_mode"
 
+	/**
+         * Whether to enable PULSE Edge lights
+         */
+        val LOCKSCREEN_STATUS_BAR = "lockscreen_status_bar"
+
         /**
          * QS Tiles New Tint
          */

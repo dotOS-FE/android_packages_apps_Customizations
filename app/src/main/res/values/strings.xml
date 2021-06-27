@@ -64,6 +64,8 @@
     <string name="edge_lightning_mode_accent">Accent Color</string>
     <string name="edge_lightning_mode_custom">Custom Color</string>
     <string name="edge_lightning_mode_auto">Notification Color</string>
+    <string name="lockscreen_status_bar_title">Status bar</string>
+    <string name="lockscreen_status_bar_summary">Display status bar on the lockscreen</string>
 
     <!-- System Section -->
     <string name="hold_to_torch">Hold to Torch</string>

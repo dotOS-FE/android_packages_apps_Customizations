@@ -101,6 +101,17 @@ class AODLockscreenSection : GenericSection() {
         } else {
             view.findViewById<NotSupportedView>(R.id.aodNS).visibility = View.VISIBLE
         }
+	buildSwitch(
+                optionsList,
+                iconID = R.drawable.ic_aod,
+                title = getString(R.string.disabled),
+                subtitle = getString(R.string.lockscreen_status_bar_title),
+                accentColor = R.color.dot_red,
+                feature = featureManager.System().LOCKSCREEN_STATUS_BAR,
+                featureType = SYSTEM,
+                summary = getString(R.string.lockscreen_status_bar_summary),
+		enabled = true
+            )
         buildSwipeable(
             options2List,
             iconID = R.drawable.ic_screenoff,
