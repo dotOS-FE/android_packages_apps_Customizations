@@ -399,6 +399,16 @@ class FeatureManager(private val contentResolver: ContentResolver) {
          */
         val LOCKSCREEN_STATUS_BAR = "lockscreen_status_bar"
 
+	/**
+         * Enable/Disable vibration on successfull fingerprint auth
+         */
+        val FINGERPRINT_SUCCESS_VIB = "fingerprint_success_vib"
+
+	/**
+         * Enable/Disable vibration on error fingerprint auth
+         */
+        val FINGERPRINT_ERROR_VIB = "fingerprint_error_vib"
+
         /**
          * QS Tiles New Tint
          */
