@@ -283,5 +283,25 @@ open class SystemSection : GenericSection() {
             summary = getString(R.string.music_visualizer_summary),
             enabled = false
         )
+	buildSwitch(
+            miscCardList,
+            iconID = R.drawable.ic_qs_title,
+            title = getString(R.string.disabled),
+            subtitle = getString(R.string.reticker_title),
+            accentColor = R.color.red_500,
+            feature = featureManager.System().RETICKER_STATUS,
+            featureType = SYSTEM,
+            summary = getString(R.string.reticker_summary)
+        )
+	buildSwitch(
+            miscCardList,
+            iconID = R.drawable.ic_qs_title,
+            title = getString(R.string.disabled),
+            subtitle = getString(R.string.reticker_colored_title),
+            accentColor = R.color.green_800,
+            feature = featureManager.System().RETICKER_COLORED,
+            featureType = SYSTEM,
+            summary = getString(R.string.reticker_colored_summary)
+        )
     }
 }

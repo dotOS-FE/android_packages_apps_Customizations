@@ -517,6 +517,13 @@ class FeatureManager(private val contentResolver: ContentResolver) {
 
         val SCREEN_OFF_ANIMATION = "screen_off_animation"
 
+	/**
+         * reTicker / reTicker Colored
+         */
+        val RETICKER_STATUS = "reticker_status"
+
+	val RETICKER_COLORED = "reticker_colored"
+
         fun setInt(feature: String, value: Int) {
             Settings.System.putInt(contentResolver, feature, value)
         }
