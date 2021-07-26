@@ -144,6 +144,11 @@
     <string name="show_batterylight_dnd">Enable it in Do-Not-Disturb mode</string>
     <string name="blinking">Blinking</string>
     <string name="blinking_on_low">Light Blinking on low battery</string>
+    <string name="extras_title">Extras</string>
+
+    <!-- Notification count -->
+    <string name="statusbar_notif_count_title">Show notifications count</string>
+    <string name="statusbar_notif_count_summary">Display the number of pending notifications</string>
 
     <!-- Settings Section -->
     <string name="enable_dot_stats">Enable Dot Stats</string>

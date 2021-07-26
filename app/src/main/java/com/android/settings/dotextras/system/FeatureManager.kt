@@ -498,6 +498,11 @@ class FeatureManager(private val contentResolver: ContentResolver) {
         val STATUS_BAR_BRIGHTNESS_CONTROL = "status_bar_brightness_control"
 
         /**
+         *  Statusbar notifications counter
+         */
+        val STATUS_BAR_NOTIF_COUNT = "status_bar_notif_count"
+
+        /**
          * Show current active data sim data usage
          */
         val QS_SHOW_DATA_USAGE = "qs_show_data_usage"

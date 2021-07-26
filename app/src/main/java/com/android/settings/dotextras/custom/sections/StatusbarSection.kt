@@ -44,6 +44,7 @@ class StatusbarSection : GenericSection() {
         val batteryLightList = ArrayList<ContextCards>()
         val trafficList = ArrayList<ContextCards>()
         val clockList = ArrayList<ContextCards>()
+        val extrasList = ArrayList<ContextCards>()
         buildSwipeable(
             list,
             iconID = R.drawable.round_battery_full_white_36dp,
@@ -326,5 +327,17 @@ class StatusbarSection : GenericSection() {
             }
         }
         setupLayout(clockList, R.id.sectionClock)
+        buildSwitch(
+            extrasList,
+            iconID = R.drawable.ic_count_icon,
+            title = getString(R.string.disabled),
+            subtitle = getString(R.string.statusbar_notif_count_title),
+            accentColor = R.color.orange_600,
+            feature = featureManager.System().STATUS_BAR_NOTIF_COUNT,
+            featureType = SYSTEM,
+            summary = getString(R.string.statusbar_notif_count_summary),
+            enabled = false
+        )
+        setupLayout(extrasList, R.id.sectionStatusBarExtras)
     }
 }
