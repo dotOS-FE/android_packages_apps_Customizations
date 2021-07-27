@@ -259,7 +259,7 @@ open class SystemSection : GenericSection() {
             feature = featureManager.System().ADVANCED_REBOOT,
             featureType = SYSTEM,
             summary = getString(R.string.advanced_reboot_summary),
-            enabled = false
+            enabled = true
         )
         buildSwitch(
             miscCardList,
