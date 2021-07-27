@@ -529,6 +529,11 @@ class FeatureManager(private val contentResolver: ContentResolver) {
 
 	val RETICKER_COLORED = "reticker_colored"
 
+	/**
+         * Show/Hide lock icon on lockscreen
+         */
+        val LOCKSCREEN_LOCK_ICON = "lockscreen_lock_icon"
+
         fun setInt(feature: String, value: Int) {
             Settings.System.putInt(contentResolver, feature, value)
         }

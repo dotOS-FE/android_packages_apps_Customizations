@@ -134,6 +134,17 @@ class AODLockscreenSection : GenericSection() {
                 summary = getString(R.string.fingerprint_error_vib_summary),
                 enabled = true
             )
+	buildSwitch(
+                optionsList,
+                iconID = R.drawable.ic_lock,
+                title = getString(R.string.disabled),
+                subtitle = getString(R.string.lockscreen_lock_icon_title),
+                accentColor = R.color.red_500,
+                feature = featureManager.System().LOCKSCREEN_LOCK_ICON,
+                featureType = SYSTEM,
+                summary = getString(R.string.lockscreen_lock_icon_summary),
+                enabled = true
+            )
         buildSwipeable(
             options2List,
             iconID = R.drawable.ic_screenoff,
