@@ -303,5 +303,15 @@ open class SystemSection : GenericSection() {
             featureType = SYSTEM,
             summary = getString(R.string.reticker_colored_summary)
         )
+	buildSwitch(
+            miscCardList,
+            iconID = R.drawable.ic_volume,
+            title = getString(R.string.disabled),
+            subtitle = getString(R.string.show_app_volume_title),
+            accentColor = R.color.dot_violet,
+            feature = featureManager.System().SHOW_APP_VOLUME,
+            featureType = SYSTEM,
+            summary = getString(R.string.show_app_volume_summary)
+        )
     }
 }

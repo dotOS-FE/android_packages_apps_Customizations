@@ -534,6 +534,11 @@ class FeatureManager(private val contentResolver: ContentResolver) {
          */
         val LOCKSCREEN_LOCK_ICON = "lockscreen_lock_icon"
 
+	/**
+         * Enable/Disable  per-app volume control
+         */
+        val SHOW_APP_VOLUME = "show_app_volume"
+
         fun setInt(feature: String, value: Int) {
             Settings.System.putInt(contentResolver, feature, value)
         }
