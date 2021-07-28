@@ -137,6 +137,18 @@ open class SystemSection : GenericSection() {
             summary = getString(R.string.threewayss_summary),
             enabled = false
         )
+	buildSwipeable(
+            list = gesturesCardList,
+            iconID = R.drawable.ic_three_fingers,
+            subtitle = getString(R.string.screenshot_compression_title),
+            accentColor = R.color.teal_500,
+            feature = featureManager.System().SCREENSHOT_COMPRESSION,
+            featureType = SYSTEM,
+            min = 0,
+            max = 100,
+            default = 10,
+            summary = getString(R.string.screenshot_compression_summary)
+        )
         buildSwitch(
             gesturesCardList,
             iconID = R.drawable.ic_direction,

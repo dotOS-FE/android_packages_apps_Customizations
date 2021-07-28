@@ -539,6 +539,11 @@ class FeatureManager(private val contentResolver: ContentResolver) {
          */
         val SHOW_APP_VOLUME = "show_app_volume"
 
+	/**
+         * Screenshot Compression
+         */
+        val SCREENSHOT_COMPRESSION = "screenshot_compression"
+
         fun setInt(feature: String, value: Int) {
             Settings.System.putInt(contentResolver, feature, value)
         }

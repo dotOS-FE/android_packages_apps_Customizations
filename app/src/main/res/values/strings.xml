@@ -96,6 +96,10 @@
     <string name="media_art_title">Lockscreen Media Art</string>
     <string name="media_art_summary">Lockscreen\'s going fancy</string>
 
+    <!-- Screenshot compression  -->
+    <string name="screenshot_compression_title">Screenshot quality</string>
+    <string name="screenshot_compression_summary">Compress screenshot size with loss in image quality</string>
+
     <!-- reTicker -->
     <string name="reticker_title">reTicker</string>
     <string name="reticker_summary">Replace your notifications with a redesigned version of tickers! \nSlim and less invasive than a standard notification</string>
