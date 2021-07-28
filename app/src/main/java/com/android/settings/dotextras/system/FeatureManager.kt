@@ -544,6 +544,11 @@ class FeatureManager(private val contentResolver: ContentResolver) {
          */
         val SCREENSHOT_COMPRESSION = "screenshot_compression"
 
+	/**
+         * Wake up on charge
+         */
+        val WAKE_WHEN_PLUGGED_OR_UNPLUGGED = "wake_when_plugged_or_unplugged"
+
         fun setInt(feature: String, value: Int) {
             Settings.System.putInt(contentResolver, feature, value)
         }

@@ -325,5 +325,15 @@ open class SystemSection : GenericSection() {
             featureType = SYSTEM,
             summary = getString(R.string.show_app_volume_summary)
         )
+	buildSwitch(
+            miscCardList,
+            iconID = R.drawable.ic_plug,
+            title = getString(R.string.disabled),
+            subtitle = getString(R.string.wakeup_when_plugged_unplugged_title),
+            accentColor = R.color.green_800,
+            feature = featureManager.System().WAKE_WHEN_PLUGGED_OR_UNPLUGGED,
+            featureType = SYSTEM,
+            summary = getString(R.string.wakeup_when_plugged_unplugged_summary)
+        )
     }
 }

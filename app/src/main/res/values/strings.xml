@@ -110,6 +110,10 @@
     <string name="show_app_volume_title">Per-app volume control</string>
     <string name="show_app_volume_summary">Control app volume from volume panel</string>    
 
+    <!-- Wakeup options -->
+    <string name="wakeup_when_plugged_unplugged_title">Wake up on charge</string>
+    <string name="wakeup_when_plugged_unplugged_summary">Wake up device if charger is plugged/unplugged.</string>
+
     <!-- QS Section -->
     <string name="qs_title">Tiles Title</string>
     <string name="rows_amp_columns"><![CDATA[Rows & Columns]]></string>
