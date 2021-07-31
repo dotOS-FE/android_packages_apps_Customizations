@@ -50,6 +50,8 @@
         <item>dotfe_wall_0</item>
         <item>dotfe_wall_1</item>
         <item>dotfe_wall_2</item>
+	<item>dotfe_wall_3</item>
+	<item>dotfe_wall_4</item>
     </string-array>
 
     <!-- Hardware key rebinding -->
