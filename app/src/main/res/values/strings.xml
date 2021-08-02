@@ -74,6 +74,8 @@
     <string name="fingerprint_error_vib_summary">Vibrate on error fingerprint authentication</string>
     <string name="lockscreen_lock_icon_title">Lock icon</string>
     <string name="lockscreen_lock_icon_summary">Display lock icon on the lockscreen</string>
+    <string name="lockscreen_hide_shortcuts_title">Hide Bottom Shortcuts</string>
+    <string name="lockscreen_hide_shortcuts_summary">Hide Left-Right Shortcuts on secure lock screens</string>
 
     <!-- System Section -->
     <string name="hold_to_torch">Hold to Torch</string>

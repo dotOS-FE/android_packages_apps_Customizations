@@ -555,6 +555,11 @@ class FeatureManager(private val contentResolver: ContentResolver) {
          */
         val WAKE_WHEN_PLUGGED_OR_UNPLUGGED = "wake_when_plugged_or_unplugged"
 
+	/**
+         * Show/Hide lockscreen shortcuts
+         */
+        val HIDE_LOCK_SHORTCUTS = "hide_lock_shortcuts"
+
         fun setInt(feature: String, value: Int) {
             Settings.System.putInt(contentResolver, feature, value)
         }

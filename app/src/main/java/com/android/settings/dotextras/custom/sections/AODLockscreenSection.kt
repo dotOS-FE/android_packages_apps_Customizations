@@ -155,6 +155,16 @@ class AODLockscreenSection : GenericSection() {
                 summary = getString(R.string.lockscreen_lock_icon_summary),
                 enabled = true
             )
+	buildSwitch(
+                optionsList,
+                iconID = R.drawable.ic_lock_outline,
+                title = getString(R.string.disabled),
+                subtitle = getString(R.string.lockscreen_hide_shortcuts_title),
+                accentColor = R.color.dot_green,
+                feature = featureManager.System().HIDE_LOCK_SHORTCUTS,
+                featureType = SYSTEM,
+                summary = getString(R.string.lockscreen_hide_shortcuts_summary),
+            )
         buildSwipeable(
             options2List,
             iconID = R.drawable.ic_screenoff,
