@@ -109,6 +109,12 @@ class FeatureManager(private val contentResolver: ContentResolver) {
          */
         val DOZE_ALWAYS_ON = "doze_always_on"
 
+	/**
+         * Indicates whether doze should be always on when charging.
+         * Type: int (0 for false, 1 for true)
+         */
+        val DOZE_ON_CHARGE = "doze_on_charge"
+
         /**
          * Gesture that wakes up the display, showing some version of the lock screen.
          */

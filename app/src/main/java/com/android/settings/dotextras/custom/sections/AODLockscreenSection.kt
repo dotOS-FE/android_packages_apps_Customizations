@@ -48,6 +48,16 @@ class AODLockscreenSection : GenericSection() {
                 optionsList,
                 iconID = R.drawable.ic_aod,
                 title = getString(R.string.disabled),
+                subtitle = getString(R.string.doze_on_charge_title),
+                accentColor = R.color.purple_500,
+                feature = featureManager.Secure().DOZE_ON_CHARGE,
+                featureType = SECURE,
+                summary = getString(R.string.doze_on_charge_summary)
+            )
+	    buildSwitch(
+                optionsList,
+                iconID = R.drawable.ic_aod,
+                title = getString(R.string.disabled),
                 subtitle = getString(R.string.aod_title),
                 accentColor = R.color.orange_500,
                 feature = featureManager.Secure().DOZE_ALWAYS_ON,
