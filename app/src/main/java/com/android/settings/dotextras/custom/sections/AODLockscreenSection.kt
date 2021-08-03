@@ -165,6 +165,18 @@ class AODLockscreenSection : GenericSection() {
                 featureType = SYSTEM,
                 summary = getString(R.string.lockscreen_hide_shortcuts_summary),
             )
+	buildSwipeable(
+            optionsList,
+            iconID = R.drawable.ic_blur,
+            subtitle = getString(R.string.lockscreen_blur_title),
+            accentColor = R.color.orange_500,
+            feature = featureManager.System().LOCKSCREEN_BLUR,
+            featureType = SYSTEM,
+            min = 0,
+            max = 100,
+            default = 0,
+	    summary = getString(R.string.lockscreen_blur_summary)
+        )
         buildSwipeable(
             options2List,
             iconID = R.drawable.ic_screenoff,

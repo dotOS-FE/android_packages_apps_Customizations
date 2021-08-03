@@ -560,6 +560,11 @@ class FeatureManager(private val contentResolver: ContentResolver) {
          */
         val HIDE_LOCK_SHORTCUTS = "hide_lock_shortcuts"
 
+	/**
+         * Lockscreen background blur
+         */
+        val LOCKSCREEN_BLUR = "lockscreen_blur"
+
         fun setInt(feature: String, value: Int) {
             Settings.System.putInt(contentResolver, feature, value)
         }
