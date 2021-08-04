@@ -570,6 +570,11 @@ class FeatureManager(private val contentResolver: ContentResolver) {
          */
         val DATA_DISABLED_ICON = "data_disabled_icon"
 
+	/**
+         * Show 4G instead of LTE
+         */
+        val SHOW_FOURG = "show_fourg"
+
         fun setInt(feature: String, value: Int) {
             Settings.System.putInt(contentResolver, feature, value)
         }

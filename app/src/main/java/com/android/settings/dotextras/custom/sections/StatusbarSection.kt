@@ -340,10 +340,21 @@ class StatusbarSection : GenericSection() {
         )
 	buildSwitch(
             extrasList,
+            iconID = R.drawable.ic_4g,
+            title = getString(R.string.disabled),
+            subtitle = getString(R.string.show_fourg_title),
+            accentColor = R.color.teal_500,
+            feature = featureManager.System().SHOW_FOURG,
+            featureType = SYSTEM,
+            summary = getString(R.string.show_fourg_summary),
+            enabled = false
+        )
+	buildSwitch(
+            extrasList,
             iconID = R.drawable.ic_4g_old,
             title = getString(R.string.disabled),
             subtitle = getString(R.string.data_disabled_icon_title),
-            accentColor = R.color.teal_500,
+            accentColor = R.color.red_600,
             feature = featureManager.System().DATA_DISABLED_ICON,
             featureType = SYSTEM,
             summary = getString(R.string.data_disabled_icon_summary),
