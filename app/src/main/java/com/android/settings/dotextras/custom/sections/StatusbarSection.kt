@@ -338,6 +338,17 @@ class StatusbarSection : GenericSection() {
             summary = getString(R.string.statusbar_notif_count_summary),
             enabled = false
         )
+	buildSwitch(
+            extrasList,
+            iconID = R.drawable.ic_4g_old,
+            title = getString(R.string.disabled),
+            subtitle = getString(R.string.data_disabled_icon_title),
+            accentColor = R.color.teal_500,
+            feature = featureManager.System().DATA_DISABLED_ICON,
+            featureType = SYSTEM,
+            summary = getString(R.string.data_disabled_icon_summary),
+            enabled = true
+        )
         setupLayout(extrasList, R.id.sectionStatusBarExtras)
     }
 }

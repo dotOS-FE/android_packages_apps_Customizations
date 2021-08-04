@@ -565,6 +565,11 @@ class FeatureManager(private val contentResolver: ContentResolver) {
          */
         val LOCKSCREEN_BLUR = "lockscreen_blur"
 
+	/**
+         * Data disabled icon
+         */
+        val DATA_DISABLED_ICON = "data_disabled_icon"
+
         fun setInt(feature: String, value: Int) {
             Settings.System.putInt(contentResolver, feature, value)
         }
