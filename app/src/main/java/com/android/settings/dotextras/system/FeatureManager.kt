@@ -575,6 +575,11 @@ class FeatureManager(private val contentResolver: ContentResolver) {
          */
         val SHOW_FOURG = "show_fourg"
 
+	/**
+         * Show/Hide roaming indicator
+         */
+        val ROAMING_INDICATOR_ICON = "roaming_indicator_icon"
+
         fun setInt(feature: String, value: Int) {
             Settings.System.putInt(contentResolver, feature, value)
         }

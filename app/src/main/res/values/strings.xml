@@ -170,6 +170,8 @@
     <string name="show_fourg_summary">Replaces LTE statusbar indicators with 4G</string>
     <string name="data_disabled_icon_title">Data disabled icon</string>
     <string name="data_disabled_icon_summary">Display a cross sign next to signal bar when data is disabled</string>
+    <string name="roaming_indicator_icon_title">Roaming indicator</string>
+    <string name="roaming_indicator_icon_summary">Display roaming indicator in signal icon when in roaming mode</string>
 
     <!-- Notification count -->
     <string name="statusbar_notif_count_title">Show notifications count</string>

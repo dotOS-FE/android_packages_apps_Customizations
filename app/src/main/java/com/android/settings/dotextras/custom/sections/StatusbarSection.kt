@@ -360,6 +360,17 @@ class StatusbarSection : GenericSection() {
             summary = getString(R.string.data_disabled_icon_summary),
             enabled = true
         )
+	buildSwitch(
+            extrasList,
+            iconID = R.drawable.ic_roaming,
+            title = getString(R.string.disabled),
+            subtitle = getString(R.string.roaming_indicator_icon_title),
+            accentColor = R.color.pink_500,
+            feature = featureManager.System().ROAMING_INDICATOR_ICON,
+            featureType = SYSTEM,
+            summary = getString(R.string.roaming_indicator_icon_summary),
+            enabled = true
+        )
         setupLayout(extrasList, R.id.sectionStatusBarExtras)
     }
 }
