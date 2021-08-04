@@ -126,6 +126,8 @@
     <string name="qs_tiles_accent_v2">Tiles Accent V2</string>
     <string name="qs_percentage_style">QS Percentage Style</string>
     <string name="qs_tiles_accent_v2_summary">Better use of accent color in tiles</string>
+    <string name="lockscreen_qs_disabled_title">Disable quick settings when locked</string>
+    <string name="lockscreen_qs_disabled_summary">Disable expanding quick settings on secure lock screens</string>
 
     <!-- FOD Section -->
     <string name="fod_screenoff_summary">Use Biometric Authentication while you screen is closed. </string>

@@ -96,6 +96,17 @@ open class QSSection : GenericSection() {
             summary = getString(R.string.qs_tiles_accent_v2_summary),
             enabled = true
         )
+	buildSwitch(
+            qsList,
+            iconID = R.drawable.ic_lock,
+            title = getString(R.string.disabled),
+            subtitle = getString(R.string.lockscreen_qs_disabled_title),
+            accentColor = R.color.orange_500,
+            feature = "status_bar_locked_on_secure_keyguard",
+            featureType = SYSTEM,
+	    summary = getString(R.string.lockscreen_qs_disabled_summary),
+            enabled = false
+        )
         setupLayout(qsList, R.id.sectionQS)
         createBalloon(R.string.click_to_toggle, 0, R.id.sectionQS)
         /**
